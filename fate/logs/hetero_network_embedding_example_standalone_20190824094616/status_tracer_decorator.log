@@ -1,0 +1,30 @@
+"2019-08-24 09:48:54,726 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-24 09:48:54,727 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 920, in run
+    self.network_embedding(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/workflow/workflow.py", line 216, in network_embedding
+    self.nrler.fit(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 174, in fit
+    self.update_common_nodes(common_embedding, common_nodes, node2id)
+  File "/fate/federatedml/network_embedding/base_network_embedding.py", line 121, in update_common_nodes
+    self.embedding_[node2id[node]] = common_embedding.get(node)
+KeyError: ('0', <federatedml.feature.instance.Instance object at 0x7fc869805390>)
+"
+"2019-08-24 09:48:54,729 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"
+"2019-08-24 09:48:54,746 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-24 09:48:54,747 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 920, in run
+    self.network_embedding(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/workflow/workflow.py", line 216, in network_embedding
+    self.nrler.fit(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_host.py", line 134, in fit
+    self.update_common_nodes(common_embedding, common_nodes, node2id)
+  File "/fate/federatedml/network_embedding/base_network_embedding.py", line 121, in update_common_nodes
+    self.embedding_[node2id[node]] = common_embedding.get(node)
+KeyError: ('0', <federatedml.feature.instance.Instance object at 0x7f1c5a364358>)
+"
+"2019-08-24 09:48:54,750 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

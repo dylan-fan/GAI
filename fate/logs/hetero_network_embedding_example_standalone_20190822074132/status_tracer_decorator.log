@@ -1,0 +1,22 @@
+"2019-08-22 07:41:36,612 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 07:41:36,613 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 913, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 213, in network_embedding
+    data_instances = self.intesrect(data_instances, intersect_flowid)
+AttributeError: 'NEGuestWorkFLow' object has no attribute 'intesrect'
+"
+"2019-08-22 07:41:36,615 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"
+"2019-08-22 07:41:36,676 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 07:41:36,677 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 913, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 213, in network_embedding
+    data_instances = self.intesrect(data_instances, intersect_flowid)
+AttributeError: 'NEHostWorkFlow' object has no attribute 'intesrect'
+"
+"2019-08-22 07:41:36,679 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

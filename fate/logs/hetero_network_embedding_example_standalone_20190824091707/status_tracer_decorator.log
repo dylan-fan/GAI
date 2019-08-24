@@ -1,0 +1,19 @@
+"2019-08-24 09:35:26,337 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-24 09:35:26,338 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 920, in run
+    self.network_embedding(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/workflow/workflow.py", line 216, in network_embedding
+    self.nrler.fit(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_arbiter.py", line 114, in fit
+    idx=0)
+  File "/fate/arch/api/federation.py", line 73, in remote
+    return RuntimeInstance.FEDERATION.remote(obj=obj, name=name, tag=tag, role=role, idx=idx)
+  File "/fate/arch/api/standalone/federation.py", line 96, in remote
+    algorithm, sub_name = self.__check_authorization(name)
+  File "/fate/arch/api/standalone/federation.py", line 90, in __check_authorization
+    raise ValueError("{} is not allow to send from {}".format(sub_name, self.role))
+ValueError: common_embedding is not allow to send from arbiter
+"
+"2019-08-24 09:35:26,341 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

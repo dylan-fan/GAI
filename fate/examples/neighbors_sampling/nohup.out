@@ -1,0 +1,6 @@
+config path is /fate/examples/neighbors_sampling/conf/guest_runtime_conf.json_neighbors_sampling_example_standalone_20190806075012
+jobid is neighbors_sampling_example_standalone_20190806075012
+python: can't open file '../../workflow/neighbors_sampling_workflow/neighbors_sampling_guest_workflow.py': [Errno 2] No such file or directory
+config path is /fate/examples/neighbors_sampling/conf/host_runtime_conf.json_neighbors_sampling_example_standalone_20190806075012
+jobid is neighbors_sampling_example_standalone_20190806075012
+python: can't open file '../../workflow/neighbors_sampling_workflow/neighbors_sampling_host_workflow.py': [Errno 2] No such file or directory

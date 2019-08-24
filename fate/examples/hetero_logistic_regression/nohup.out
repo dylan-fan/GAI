@@ -1,0 +1,604 @@
+config path is /fate/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804023144
+jobid is hetero_logistic_regression_example_standalone_20190804023144
+config path is /fate/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804023144
+jobid is hetero_logistic_regression_example_standalone_20190804023144
+config path is /fate/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804023144
+jobid is hetero_logistic_regression_example_standalone_20190804023144
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish scale parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish one_vs_rest parameter check!
+Finish init parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish encode parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/logging/__init__.py", line 996, in emit
+    stream.write(msg)
+UnicodeEncodeError: 'ascii' codec can't encode character '\uff0c' in position 62: ordinal not in range(128)
+Call stack:
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 39, in <module>
+    guest_wf.run()
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 906, in run
+    self.cross_validation(data_instance)
+  File "/fate/workflow/workflow.py", line 554, in cross_validation
+    eval_name, mean_value, std_value))
+Message: 'guest\uff0cevaluate name: auc, mean: 0.9748, std: 0.0206'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/logging/__init__.py", line 996, in emit
+    stream.write(msg)
+UnicodeEncodeError: 'ascii' codec can't encode character '\uff0c' in position 62: ordinal not in range(128)
+Call stack:
+  File "../../workflow/hetero_lr_workflow/hetero_guest_workflow.py", line 39, in <module>
+    guest_wf.run()
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 906, in run
+    self.cross_validation(data_instance)
+  File "/fate/workflow/workflow.py", line 554, in cross_validation
+    eval_name, mean_value, std_value))
+Message: 'guest\uff0cevaluate name: precision_thres_0.5, mean: 0.9202, std: 0.0272'
+Arguments: ()
+config path is /fate/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804025721
+jobid is hetero_logistic_regression_example_standalone_20190804025721
+config path is /fate/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804025721
+jobid is hetero_logistic_regression_example_standalone_20190804025721
+config path is /fate/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804025721
+jobid is hetero_logistic_regression_example_standalone_20190804025721
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+config path is /fate/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804033020
+jobid is hetero_logistic_regression_example_standalone_20190804033020
+config path is /fate/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804033020
+jobid is hetero_logistic_regression_example_standalone_20190804033020
+config path is /fate/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804033020
+jobid is hetero_logistic_regression_example_standalone_20190804033020
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+config path is /fate/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804090934
+jobid is hetero_logistic_regression_example_standalone_20190804090934
+config path is /fate/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804090934
+jobid is hetero_logistic_regression_example_standalone_20190804090934
+config path is /fate/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804090934
+jobid is hetero_logistic_regression_example_standalone_20190804090934
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+config path is /fate/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804091336
+jobid is hetero_logistic_regression_example_standalone_20190804091336
+config path is /fate/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804091336
+jobid is hetero_logistic_regression_example_standalone_20190804091336
+config path is /fate/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804091336
+jobid is hetero_logistic_regression_example_standalone_20190804091336
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+run_arbiter.sh: line 25:  3777 Killed                  python ../../workflow/hetero_lr_workflow/hetero_arbiter_workflow.py -c $config_path -j $jobid
+run_host.sh: line 25:  3511 Killed                  python ../../workflow/hetero_lr_workflow/hetero_host_workflow.py -c $config_path -j $jobid
+run_guest.sh: line 25:  3502 Killed                  python ../../workflow/hetero_lr_workflow/hetero_guest_workflow.py -c $config_path -j $jobid
+run_guest.sh: line 25:  3751 Killed                  python ../../workflow/hetero_lr_workflow/hetero_guest_workflow.py -c $config_path -j $jobid
+run_host.sh: line 25:  3762 Killed                  python ../../workflow/hetero_lr_workflow/hetero_host_workflow.py -c $config_path -j $jobid
+config path is /fate/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804092356
+jobid is hetero_logistic_regression_example_standalone_20190804092356
+config path is /fate/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804092356
+jobid is hetero_logistic_regression_example_standalone_20190804092356
+config path is /fate/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804092356
+jobid is hetero_logistic_regression_example_standalone_20190804092356
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+fail to post status running
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+config path is /fate/examples/hetero_logistic_regression/conf/guest_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804092639
+jobid is hetero_logistic_regression_example_standalone_20190804092639
+config path is /fate/examples/hetero_logistic_regression/conf/host_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804092639
+jobid is hetero_logistic_regression_example_standalone_20190804092639
+config path is /fate/examples/hetero_logistic_regression/conf/arbiter_runtime_conf.json_hetero_logistic_regression_example_standalone_20190804092639
+jobid is hetero_logistic_regression_example_standalone_20190804092639
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish predict parameter check!
+Finish evaluation parameter check!
+Finish workerflow parameter check!

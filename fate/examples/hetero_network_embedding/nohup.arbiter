@@ -1,0 +1,27 @@
+config path is /fate/examples/hetero_network_embedding/conf/arbiter_runtime_conf.json_hetero_network_embedding_example_standalone_20190824163859
+jobid is hetero_network_embedding_example_standalone_20190824163859
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish neighbors sampling parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish network embedding parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish network embedding parameter check!
+Finish workerflow parameter check!

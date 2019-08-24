@@ -1,0 +1,17 @@
+"2019-08-22 08:47:04,413 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 08:47:04,414 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 913, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 215, in network_embedding
+    self.nrler.fit(data_instances, node2id)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 210, in fit
+    self.update_model(nodeid_join_gradient)
+  File "/fate/federatedml/network_embedding/base_network_embedding.py", line 111, in update_model
+    self.embedding_ = self.updater.update_embedding(self.embedding_, nodeid_join_gradient)
+  File "/fate/federatedml/optim/updater.py", line 58, in update_embedding
+    embedding_[nodeid, : ] = embedding_[nodeid, : ] - gradient
+TypeError: float() argument must be a string or a number, not 'PaillierEncryptedNumber'
+"
+"2019-08-22 08:47:04,417 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

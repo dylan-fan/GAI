@@ -1,0 +1,8 @@
+"2019-08-24 08:42:42,097 - hetero_ne_guest.py[line:68] - INFO: samples number:4440"
+"2019-08-24 08:42:42,098 - hetero_ne_guest.py[line:69] - INFO: Enter hetero_ne_guest fit"
+"2019-08-24 08:42:42,098 - hetero_ne_guest.py[line:71] - INFO: Guest party has 2358 nodes"
+"2019-08-24 08:42:42,598 - hetero_ne_guest.py[line:74] - INFO: Transform input data to train instance"
+"2019-08-24 08:42:42,599 - hetero_ne_guest.py[line:81] - INFO: Get public_key from arbiter:<PaillierPublicKey 175c5d1268>"
+"2019-08-24 08:42:42,599 - hetero_ne_guest.py[line:85] - INFO: Generate mini-batch from input data"
+"2019-08-24 08:42:47,570 - hetero_ne_guest.py[line:89] - INFO: samples number:4440"
+"2019-08-24 08:42:47,570 - hetero_ne_guest.py[line:97] - INFO: Generate mini-batch for local instances in guest"

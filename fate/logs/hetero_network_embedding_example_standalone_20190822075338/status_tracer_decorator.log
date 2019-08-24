@@ -1,0 +1,39 @@
+"2019-08-22 07:54:14,980 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 07:54:14,983 - status_tracer_decorator.py[line:74] - INFO: concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/concurrent/futures/process.py", line 175, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "/fate/arch/api/standalone/eggroll.py", line 303, in do_join
+    v3 = _joiner(v1, v2)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 38, in <lambda>
+    (fate_operator.dot(e1[0], e2[0]),
+  File "/fate/federatedml/util/fate_operator.py", line 43, in dot
+    return _one_dimension_dot(X, w)
+  File "/fate/federatedml/util/fate_operator.py", line 28, in _one_dimension_dot
+    if np.fabs(X[i]) < 1e-5:
+AttributeError: 'PaillierEncryptedNumber' object has no attribute 'fabs'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 913, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 215, in network_embedding
+    self.nrler.fit(data_instances, node2id)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 161, in fit
+    aggregate_forward_res = self.aggregate_forward(host_forward)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 37, in aggregate_forward
+    lambda e1, e2:
+  File "/fate/arch/api/standalone/eggroll.py", line 743, in join
+    result = r.result()
+  File "/usr/local/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+AttributeError: 'PaillierEncryptedNumber' object has no attribute 'fabs'
+"
+"2019-08-22 07:54:14,988 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

@@ -1,0 +1,4 @@
+"2019-08-24 16:24:47,766 - status_tracer_decorator.py[line:59] - INFO: fail to post status success"
+"2019-08-24 16:24:47,766 - status_tracer_decorator.py[line:71] - INFO: job status is success"
+"2019-08-24 16:24:49,873 - status_tracer_decorator.py[line:59] - INFO: fail to post status success"
+"2019-08-24 16:24:49,874 - status_tracer_decorator.py[line:71] - INFO: job status is success"

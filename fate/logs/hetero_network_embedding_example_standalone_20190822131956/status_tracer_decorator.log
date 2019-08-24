@@ -1,0 +1,34 @@
+"2019-08-22 13:20:03,522 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 13:20:03,522 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 913, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 213, in network_embedding
+    data_instances = self.intersect(data_instances, intersect_flowid)
+  File "/fate/workflow/workflow.py", line 329, in intersect
+    intersect_ids = intersect_operator.run(data_instance)
+  File "/fate/federatedml/statistic/intersect/intersect_guest.py", line 156, in run
+    abnormal_detection.empty_table_detection(data_instances)
+  File "/fate/federatedml/util/abnormal_detection.py", line 25, in empty_table_detection
+    raise ValueError("Count of data_instance is 0")
+ValueError: Count of data_instance is 0
+"
+"2019-08-22 13:20:03,524 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"
+"2019-08-22 13:20:03,539 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 13:20:03,539 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 913, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 213, in network_embedding
+    data_instances = self.intersect(data_instances, intersect_flowid)
+  File "/fate/workflow/workflow.py", line 329, in intersect
+    intersect_ids = intersect_operator.run(data_instance)
+  File "/fate/federatedml/statistic/intersect/intersect_host.py", line 118, in run
+    abnormal_detection.empty_table_detection(data_instances)
+  File "/fate/federatedml/util/abnormal_detection.py", line 25, in empty_table_detection
+    raise ValueError("Count of data_instance is 0")
+ValueError: Count of data_instance is 0
+"
+"2019-08-22 13:20:03,541 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

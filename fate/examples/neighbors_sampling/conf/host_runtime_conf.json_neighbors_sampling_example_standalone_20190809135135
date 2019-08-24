@@ -1,0 +1,44 @@
+{
+    "local": {
+      "role": "host",
+      "party_id": 9999
+    },
+    "role": {
+      "host": [
+        9999
+      ],
+      "guest": [
+        10000
+      ]
+    },
+    "DataIOParam": {
+      "with_label": false,
+      "partition": 10,
+      "data_type": "int"
+    },
+    "WorkFlowParam": {
+      "method": "neighbors_sampling",
+      "data_input_table": "citeseer_host_neighbors_sampling_neighbors_sampling_example_standalone_20190809135135",
+      "data_input_namespace": "example_data_namespace",
+      "local_samples_namespace": "neighbors_samples/local_samples",
+      "distributed_samples_namespace": "neighbors_samples/distributed_samples",
+      "work_mode": 0
+    },
+    "IntersectParam": {
+        "intersect_method": "rsa",
+        "is_send_intersect_ids": true,
+        "join_role": "guest",
+        "with_encode": true
+    },
+    "EncodeParam": {
+      "encode_method": "sha256",
+      "salt": "12345",
+      "base64": false
+    },
+    "NeighborsSamplingParam":{
+      "times_of_sampling": 2,
+      "w": 5,
+      "nega_samp_num": 5
+    }
+  }
+  

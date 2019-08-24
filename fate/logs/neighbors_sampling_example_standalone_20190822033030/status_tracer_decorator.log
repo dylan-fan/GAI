@@ -1,0 +1,18 @@
+"2019-08-22 03:30:35,837 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 03:30:35,837 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 932, in run
+    node2id.put((int(node), id))
+TypeError: put() missing 1 required positional argument: 'v'
+"
+"2019-08-22 03:30:35,840 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"
+"2019-08-22 03:30:35,844 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 03:30:35,844 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 932, in run
+    node2id.put((int(node), id))
+TypeError: put() missing 1 required positional argument: 'v'
+"
+"2019-08-22 03:30:35,847 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

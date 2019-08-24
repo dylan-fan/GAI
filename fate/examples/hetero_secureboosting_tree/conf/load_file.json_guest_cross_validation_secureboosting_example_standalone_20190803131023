@@ -1,0 +1,8 @@
+{
+  "file": "/fate/examples/hetero_secureboosting_tree/../data/breast_b.csv",
+  "head": 1,
+  "partition": 10,
+  "table_name": "breast_guest_cross_validation_secureboosting_example_standalone_20190803131023",
+  "namespace": "example_data_namespace",
+  "work_mode": 0
+}

@@ -1,0 +1,30 @@
+"2019-08-24 08:41:10,173 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-24 08:41:10,174 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 920, in run
+    self.network_embedding(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/workflow/workflow.py", line 216, in network_embedding
+    self.nrler.fit(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 145, in fit
+    local_grads_e1, local_grads_e2, local_loss = self.local_gradient_operator.compute(E_Y, 'E_1')
+  File "/fate/federatedml/optim/gradient/logistic_gradient.py", line 78, in compute
+    batch_size = len(E_Y.count())
+TypeError: object of type 'int' has no len()
+"
+"2019-08-24 08:41:10,177 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"
+"2019-08-24 08:41:10,197 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-24 08:41:10,197 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 920, in run
+    self.network_embedding(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/workflow/workflow.py", line 216, in network_embedding
+    self.nrler.fit(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_host.py", line 105, in fit
+    local_grads_e1, local_grads_e2, local_loss = self.local_gradient_operator.compute(E_Y, 'E_1')
+  File "/fate/federatedml/optim/gradient/logistic_gradient.py", line 78, in compute
+    batch_size = len(E_Y.count())
+TypeError: object of type 'int' has no len()
+"
+"2019-08-24 08:41:10,200 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

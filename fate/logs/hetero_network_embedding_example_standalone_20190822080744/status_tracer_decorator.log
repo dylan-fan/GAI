@@ -1,0 +1,15 @@
+"2019-08-22 08:08:26,140 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 08:08:26,140 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 913, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 215, in network_embedding
+    self.nrler.fit(data_instances, node2id)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 192, in fit
+    batch_index
+  File "/fate/federatedml/util/transfer_variable.py", line 27, in generate_transferid
+    if transfer_var.name.split(".", -1)[-1] not in self.__dict__:
+AttributeError: 'HeteroNETransferVariable' object has no attribute 'name'
+"
+"2019-08-22 08:08:26,143 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

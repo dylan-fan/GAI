@@ -1,0 +1,25 @@
+config path is /fate/examples/neighbors_sampling/conf/guest_runtime_conf.json_neighbors_sampling_example_standalone_20190824163145
+jobid is neighbors_sampling_example_standalone_20190824163145
+fail to post status running
+Finish encrypt parameter check!
+Finish evaluation parameter check!
+Finish predict parameter check!
+Finish workerflow parameter check!
+Finish init parameter check!
+Finish encode parameter check!
+Finish encode parameter check!
+Finish intersect parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish logistic parameter check!
+Finish encrypt parameter check!
+Finish scale parameter check!
+Finish one_vs_rest parameter check!
+Finish neighbors sampling parameter check!
+Finish init parameter check!
+Finish encrypt parameter check!
+Finish network embedding parameter check!
+Finish all parameter checkers
+Get in base workflow initialize
+Finish neighbors sampling parameter check!
+Finish workerflow parameter check!

@@ -1,0 +1,5 @@
+"2019-08-24 08:42:42,109 - hetero_ne_host.py[line:47] - INFO: Enter hetero_ne host"
+"2019-08-24 08:42:42,109 - hetero_ne_host.py[line:49] - INFO: Host party has 2319 nodes"
+"2019-08-24 08:42:42,610 - hetero_ne_host.py[line:52] - INFO: Transform input data to train instance"
+"2019-08-24 08:42:42,612 - hetero_ne_host.py[line:59] - INFO: Get Publick key from arbiter:<PaillierPublicKey 175c5d1268>"
+"2019-08-24 08:42:42,612 - hetero_ne_host.py[line:64] - INFO: Generate mini-batch for local instances in guest"

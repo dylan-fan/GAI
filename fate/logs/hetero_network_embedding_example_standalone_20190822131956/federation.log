@@ -1,0 +1,3 @@
+"2019-08-22 13:20:03,563 - federation.py[line:124] - DEBUG: [REMOTE] Sent hetero_network_embedding_example_standalone_20190822131956-HeteroNETransferVariable.paillier_pubkey-HeteroNETransferVariable.paillier_pubkey.0-arbiter-10000-host-9999"
+"2019-08-22 13:20:03,618 - federation.py[line:124] - DEBUG: [REMOTE] Sent hetero_network_embedding_example_standalone_20190822131956-HeteroNETransferVariable.paillier_pubkey-HeteroNETransferVariable.paillier_pubkey.0-arbiter-10000-guest-10000"
+"2019-08-22 13:20:03,619 - federation.py[line:145] - DEBUG: [GET] arbiter 10000 getting remote object HeteroNETransferVariable.batch_info.0 from guest [10000]"

@@ -1,0 +1,8 @@
+"2019-08-22 03:33:23,601 - neighbors_sampling_guest.py[line:23] - INFO: bridge_instances count:244"
+"2019-08-22 03:33:23,601 - neighbors_sampling_guest.py[line:24] - INFO: Enter distributed neighbors sampling for guest"
+"2019-08-22 03:33:26,003 - neighbors_sampling_guest.py[line:29] - INFO: host_distributed_instances_target count: 740"
+"2019-08-22 03:33:27,541 - neighbors_sampling_guest.py[line:34] - INFO: guest_distributed_instances_anchor count: 740"
+"2019-08-22 03:34:31,890 - neighbors_sampling_guest.py[line:39] - INFO: host_neg_instances_target count: 3700"
+"2019-08-22 03:34:35,621 - neighbors_sampling_guest.py[line:45] - INFO: guest_neg_instances_anchor count: 3700"
+"2019-08-22 03:34:36,118 - neighbors_sampling_guest.py[line:49] - INFO: distributed_instances_target count: 4440"
+"2019-08-22 03:34:36,487 - neighbors_sampling_guest.py[line:52] - INFO: distributed_instances_anchor count: 4440"

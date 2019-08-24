@@ -1,0 +1,9 @@
+{
+  "file": "/fate/examples/hetero_logistic_regression/../data/breast_tmp_a.csv",
+  "head": 1,
+  "partition": 10,
+  "table_name": "breast_tmp_host_train_hetero_logistic_regression_example_standalone_20190806063839",
+  "namespace": "example_data_namespace",
+  "work_mode": 0,
+  "role": "_role"
+}

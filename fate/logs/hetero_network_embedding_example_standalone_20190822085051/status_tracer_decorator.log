@@ -1,0 +1,17 @@
+"2019-08-22 08:51:50,848 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 08:51:50,927 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 913, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 215, in network_embedding
+    self.nrler.fit(data_instances, node2id)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_arbiter.py", line 162, in fit
+    de_loss = self.encrypt_operator.decrypt(loss)
+  File "/fate/federatedml/secureprotol/encrypt.py", line 192, in decrypt
+    return self.privacy_key.decrypt(value)
+  File "/fate/federatedml/secureprotol/fate_paillier.py", line 184, in decrypt
+    not: %s" % type(encrypted_number))
+TypeError: encrypted_number should be an PaillierEncryptedNumber,                              not: <class 'numpy.float64'>
+"
+"2019-08-22 08:51:51,328 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

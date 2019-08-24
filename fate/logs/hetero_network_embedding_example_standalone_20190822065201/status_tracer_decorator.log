@@ -1,0 +1,11 @@
+"2019-08-22 06:52:06,629 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 06:52:06,630 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 908, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 214, in network_embedding
+    self.model.fit(data_instances, node2id)
+TypeError: fit() takes from 1 to 2 positional arguments but 3 were given
+"
+"2019-08-22 06:52:06,632 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

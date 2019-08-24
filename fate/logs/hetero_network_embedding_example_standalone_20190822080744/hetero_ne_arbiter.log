@@ -1,0 +1,7 @@
+"2019-08-22 08:07:48,982 - hetero_ne_arbiter.py[line:54] - INFO: Enter hetero_ne_arbiter fit"
+"2019-08-22 08:07:48,994 - hetero_ne_arbiter.py[line:61] - INFO: public_key: <PaillierPublicKey 11047272b1>"
+"2019-08-22 08:07:49,125 - hetero_ne_arbiter.py[line:69] - INFO: remote publick_key to host"
+"2019-08-22 08:07:49,374 - hetero_ne_arbiter.py[line:76] - INFO: remote public_key to guest"
+"2019-08-22 08:08:13,974 - hetero_ne_arbiter.py[line:81] - INFO: Get batch_info from guest: {'batch_size': 256, 'batch_num': 18}"
+"2019-08-22 08:08:13,974 - hetero_ne_arbiter.py[line:88] - INFO: iter: 0"
+"2019-08-22 08:08:13,974 - hetero_ne_arbiter.py[line:93] - INFO: batch: 0"

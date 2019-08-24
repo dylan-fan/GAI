@@ -1,0 +1,26 @@
+"2019-08-22 07:25:39,180 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 07:25:39,180 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 909, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 215, in network_embedding
+    self.nrler.fit(data_instances, node2id)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_host.py", line 66, in fit
+    self.batch_size))
+ValueError: Batch size get from guest should not less than 10, except -1, batch_size is 0
+"
+"2019-08-22 07:25:39,183 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"
+"2019-08-22 07:25:39,293 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 07:25:39,294 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 909, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 215, in network_embedding
+    self.nrler.fit(data_instances, node2id)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_arbiter.py", line 169, in fit
+    loss = iter_loss / self.batch_num
+ZeroDivisionError: division by zero
+"
+"2019-08-22 07:25:39,296 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

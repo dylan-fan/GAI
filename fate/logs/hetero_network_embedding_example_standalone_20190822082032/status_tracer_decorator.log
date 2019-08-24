@@ -1,0 +1,34 @@
+"2019-08-22 08:21:15,469 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 08:21:15,470 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 913, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 215, in network_embedding
+    self.nrler.fit(data_instances, node2id)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 210, in fit
+    self.update_model(nodeid_join_gradient)
+  File "/fate/federatedml/network_embedding/base_network_embedding.py", line 111, in update_model
+    self.embedding_ = self.updater.update_embedding(self.embedding_, nodeid_join_gradient)
+  File "/fate/federatedml/optim/updater.py", line 54, in update_embedding
+    sample_ids = nodeid_join_gradient.take(nodeid_join_gradient.count(), KeysOnly=True)
+TypeError: take() got an unexpected keyword argument 'KeysOnly'
+"
+"2019-08-22 08:21:15,473 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"
+"2019-08-22 08:21:15,477 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 08:21:15,478 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 913, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 215, in network_embedding
+    self.nrler.fit(data_instances, node2id)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_host.py", line 138, in fit
+    self.update_model(nodeid_join_gradient)
+  File "/fate/federatedml/network_embedding/base_network_embedding.py", line 111, in update_model
+    self.embedding_ = self.updater.update_embedding(self.embedding_, nodeid_join_gradient)
+  File "/fate/federatedml/optim/updater.py", line 54, in update_embedding
+    sample_ids = nodeid_join_gradient.take(nodeid_join_gradient.count(), KeysOnly=True)
+TypeError: take() got an unexpected keyword argument 'KeysOnly'
+"
+"2019-08-22 08:21:15,481 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

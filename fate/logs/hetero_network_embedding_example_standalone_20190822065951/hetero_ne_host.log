@@ -1,0 +1,3 @@
+"2019-08-22 07:00:02,664 - hetero_ne_host.py[line:41] - INFO: Enter hetero_ne host"
+"2019-08-22 07:00:02,664 - hetero_ne_host.py[line:43] - INFO: Host party has 2319 nodes"
+"2019-08-22 07:00:02,680 - hetero_ne_host.py[line:46] - INFO: Transform input data to train instance"

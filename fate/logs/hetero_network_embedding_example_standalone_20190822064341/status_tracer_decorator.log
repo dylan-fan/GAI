@@ -1,0 +1,9 @@
+"2019-08-22 06:43:46,020 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 06:43:46,021 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 907, in run
+    LOGGER.info("{} samples in {}".format(data_instances.count(), self.role))
+AttributeError: 'NoneType' object has no attribute 'count'
+"
+"2019-08-22 06:43:46,023 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

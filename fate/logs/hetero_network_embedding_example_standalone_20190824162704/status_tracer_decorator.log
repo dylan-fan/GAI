@@ -1,0 +1,28 @@
+"2019-08-24 16:28:15,197 - status_tracer_decorator.py[line:59] - INFO: fail to post status success"
+"2019-08-24 16:28:15,197 - status_tracer_decorator.py[line:71] - INFO: job status is success"
+"2019-08-24 16:29:33,143 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-24 16:29:33,144 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 921, in run
+    self.network_embedding(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/workflow/workflow.py", line 216, in network_embedding
+    self.nrler.fit(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_host.py", line 252, in fit
+    embedding_table.put(id2node[id], embedding)
+KeyError: 2319
+"
+"2019-08-24 16:29:33,147 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"
+"2019-08-24 16:29:34,767 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-24 16:29:34,767 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 921, in run
+    self.network_embedding(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/workflow/workflow.py", line 216, in network_embedding
+    self.nrler.fit(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 350, in fit
+    embedding_table.put(id2node[id], embedding)
+KeyError: 2358
+"
+"2019-08-24 16:29:34,771 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

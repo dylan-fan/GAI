@@ -1,0 +1,7 @@
+"2019-08-24 16:32:49,074 - data_overview.py[line:90] - WARNING: destroy Dtable error,:'NoneType' object has no attribute 'destroy', but this can be ignored sometimes"
+"2019-08-24 16:32:49,074 - data_overview.py[line:90] - WARNING: destroy Dtable error,:'NoneType' object has no attribute 'destroy', but this can be ignored sometimes"
+"2019-08-24 16:32:49,170 - data_overview.py[line:90] - WARNING: destroy Dtable error,:'NoneType' object has no attribute 'destroy', but this can be ignored sometimes"
+"2019-08-24 16:32:49,170 - data_overview.py[line:90] - WARNING: destroy Dtable error,:'NoneType' object has no attribute 'destroy', but this can be ignored sometimes"
+"2019-08-24 16:32:51,748 - data_overview.py[line:90] - WARNING: destroy Dtable error,:[Errno 2] No such file or directory: '0', but this can be ignored sometimes"
+"2019-08-24 16:33:15,601 - data_overview.py[line:90] - WARNING: destroy Dtable error,:[Errno 2] No such file or directory: '/fate/data/IN_MEMORY/hetero_network_embedding_example_standalone_20190824163235/de21d942-c68c-11e9-8f27-0242ac110002', but this can be ignored sometimes"
+"2019-08-24 16:33:39,861 - data_overview.py[line:90] - WARNING: destroy Dtable error,:[Errno 2] No such file or directory: 'data.mdb', but this can be ignored sometimes"

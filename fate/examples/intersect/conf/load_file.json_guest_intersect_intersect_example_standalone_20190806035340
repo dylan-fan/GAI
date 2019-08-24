@@ -1,0 +1,8 @@
+{
+  "file": "/fate/examples/intersect/../data/citeseer_b.csv",
+  "head": 1,
+  "partition": 10,
+  "table_name": "citeseer_guest_intersect_intersect_example_standalone_20190806035340",
+  "namespace": "example_data_namespace",
+  "work_mode": 0
+}

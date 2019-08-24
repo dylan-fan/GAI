@@ -1,0 +1,4 @@
+"2019-08-24 08:42:40,472 - hetero_ne_arbiter.py[line:54] - INFO: Enter hetero_ne_arbiter fit"
+"2019-08-24 08:42:40,500 - hetero_ne_arbiter.py[line:61] - INFO: public_key: <PaillierPublicKey 175c5d1268>"
+"2019-08-24 08:42:40,962 - hetero_ne_arbiter.py[line:69] - INFO: remote publick_key to host"
+"2019-08-24 08:42:41,008 - hetero_ne_arbiter.py[line:76] - INFO: remote public_key to guest"

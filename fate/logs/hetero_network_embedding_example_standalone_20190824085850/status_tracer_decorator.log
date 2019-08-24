@@ -1,0 +1,66 @@
+"2019-08-24 09:06:05,331 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-24 09:06:05,358 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-24 09:06:05,394 - status_tracer_decorator.py[line:74] - INFO: concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/concurrent/futures/process.py", line 175, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "/fate/arch/api/standalone/eggroll.py", line 303, in do_join
+    v3 = _joiner(v1, v2)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 148, in <lambda>
+    e2id_join_grads = E_Y.join(local_grads_e2, lambda v, g: (node2id[v[1]], g))
+TypeError: unhashable type: 'numpy.ndarray'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 920, in run
+    self.network_embedding(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/workflow/workflow.py", line 216, in network_embedding
+    self.nrler.fit(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 148, in fit
+    e2id_join_grads = E_Y.join(local_grads_e2, lambda v, g: (node2id[v[1]], g))
+  File "/fate/arch/api/standalone/eggroll.py", line 743, in join
+    result = r.result()
+  File "/usr/local/lib/python3.6/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+TypeError: unhashable type: 'numpy.ndarray'
+"
+"2019-08-24 09:06:05,394 - status_tracer_decorator.py[line:74] - INFO: concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/concurrent/futures/process.py", line 175, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "/fate/arch/api/standalone/eggroll.py", line 303, in do_join
+    v3 = _joiner(v1, v2)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_host.py", line 108, in <lambda>
+    e1id_join_grads = E_Y.join(local_grads_e1, lambda v, g: (node2id[v[0]], g))
+TypeError: unhashable type: 'numpy.ndarray'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 920, in run
+    self.network_embedding(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/workflow/workflow.py", line 216, in network_embedding
+    self.nrler.fit(data_instances, node2id, local_instances, common_nodes)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_host.py", line 108, in fit
+    e1id_join_grads = E_Y.join(local_grads_e1, lambda v, g: (node2id[v[0]], g))
+  File "/fate/arch/api/standalone/eggroll.py", line 743, in join
+    result = r.result()
+  File "/usr/local/lib/python3.6/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+TypeError: unhashable type: 'numpy.ndarray'
+"
+"2019-08-24 09:06:05,397 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"
+"2019-08-24 09:06:05,397 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

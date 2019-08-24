@@ -1,0 +1,4 @@
+"2019-08-22 07:54:12,068 - data_overview.py[line:90] - WARNING: destroy Dtable error,:'NoneType' object has no attribute 'destroy', but this can be ignored sometimes"
+"2019-08-22 07:54:12,068 - data_overview.py[line:90] - WARNING: destroy Dtable error,:'NoneType' object has no attribute 'destroy', but this can be ignored sometimes"
+"2019-08-22 07:54:12,519 - data_overview.py[line:90] - WARNING: destroy Dtable error,:'NoneType' object has no attribute 'destroy', but this can be ignored sometimes"
+"2019-08-22 07:54:12,520 - data_overview.py[line:90] - WARNING: destroy Dtable error,:'NoneType' object has no attribute 'destroy', but this can be ignored sometimes"

@@ -1,0 +1,8 @@
+{
+    "file": "/fate/examples/neighbors_sampling/../data/citeseer_a.csv",
+    "head": 1,
+    "partition": 10,
+    "table_name": "citeseer_host_neighbors_sampling_neighbors_sampling_example_standalone_20190809091755",
+    "namespace": "example_data_namespace",
+    "work_mode": 0
+}

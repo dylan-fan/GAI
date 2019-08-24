@@ -1,0 +1,8 @@
+{
+    "file": "/fate/examples/neighbors_sampling/../data/karate_a.csv",
+    "head": 1,
+    "partition": 10,
+    "table_name": "karate_host_neighbors_sampling_neighbors_sampling_example_standalone_20190824162421",
+    "namespace": "example_data_namespace",
+    "work_mode": 0
+}

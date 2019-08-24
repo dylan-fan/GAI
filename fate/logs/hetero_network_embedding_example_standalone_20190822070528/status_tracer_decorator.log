@@ -1,0 +1,11 @@
+"2019-08-22 07:05:33,134 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 07:05:33,134 - status_tracer_decorator.py[line:74] - INFO: Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 909, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 215, in network_embedding
+    self.nrler.fit(data_instances, node2id)
+AttributeError: 'NoneType' object has no attribute 'fit'
+"
+"2019-08-22 07:05:33,136 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"

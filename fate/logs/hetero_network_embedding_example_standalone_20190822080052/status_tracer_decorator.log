@@ -1,0 +1,35 @@
+"2019-08-22 08:01:31,877 - status_tracer_decorator.py[line:73] - INFO: job status is failed"
+"2019-08-22 08:01:31,879 - status_tracer_decorator.py[line:74] - INFO: concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/concurrent/futures/process.py", line 175, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "/fate/arch/api/standalone/eggroll.py", line 303, in do_join
+    v3 = _joiner(v1, v2)
+  File "/fate/federatedml/optim/gradient/logistic_gradient.py", line 358, in <lambda>
+    gradients = data_instance.join(fore_gradient, lambda d, g: (d.features * g))
+AttributeError: 'numpy.ndarray' object has no attribute 'features'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/fate/workflow/status_tracer_decorator.py", line 69, in wrapper
+    res = func(self, *args, **kwargs)
+  File "/fate/workflow/workflow.py", line 913, in run
+    self.network_embedding(data_instances, node2id)
+  File "/fate/workflow/workflow.py", line 215, in network_embedding
+    self.nrler.fit(data_instances, node2id)
+  File "/fate/federatedml/network_embedding/hetero_network_embedding/hetero_ne_guest.py", line 170, in fit
+    host_gradient = self.gradient_operator.compute_gradient(self.guest_forward.mapValues(lambda v: v[1]), fore_gradient)
+  File "/fate/federatedml/optim/gradient/logistic_gradient.py", line 358, in compute_gradient
+    gradients = data_instance.join(fore_gradient, lambda d, g: (d.features * g))
+  File "/fate/arch/api/standalone/eggroll.py", line 743, in join
+    result = r.result()
+  File "/usr/local/lib/python3.6/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+AttributeError: 'numpy.ndarray' object has no attribute 'features'
+"
+"2019-08-22 08:01:31,884 - status_tracer_decorator.py[line:59] - INFO: fail to post status failed"
